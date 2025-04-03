@@ -4,7 +4,7 @@ from .forms import TareaForm
 
 
 def home(request):
-    tareas=Tarea.objects.all()
+    tareas=Tareas.objects.all()
     context={"tareas":tareas}
     return render(request,"todo/home.html",context)
 
